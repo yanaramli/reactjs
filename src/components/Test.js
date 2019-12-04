@@ -6,21 +6,26 @@ import '../ImgGrid.css';
 import LoadingComponent from './LoadingComponent';
 import RefreshComponent from './RefreshComponent';
 
+//set the API url to API_ENDPOINT
 const API_ENDPOINT = 'https://picsum.photos/v2/list?limit=6&page=';
 const initialState = {
 	allNewPhoto: [],
 	page: 1
 };
 
+//to get random number for the page
 const randomNumber = (maxNumber) => Math.floor(Math.random() * maxNumber);
 
 const Test = () => {
 	const [state, setState] = useState(initialState);
+	//defined state for showModal
 	const [showModal, setShowModal] = useState(false);
+	//defined state for selectedImage
 	const [selectedImage, setSelectedImage] = useState(null);
 
-	const handleHide = () => setShowModal(false);
 
+
+	//to fetch API
 	const fetchPhoto = () => {
 		setState({ page: randomNumber(100), allNewPhoto: [] });
 		fetch(`${API_ENDPOINT}${state.page}`, {
@@ -42,10 +47,14 @@ const Test = () => {
 		// eslint-disable-next-line
 	}, []);
 
+	//handleClick event for fetch the new photo from API
 	const handleClick = () => fetchPhoto();
+	//handleHide event that let setShowModal to false
+	const handleHide = () => setShowModal(false);
 
 	return (
 		<Container>
+
 			{state.allNewPhoto.length ? (
 				<div className="Container">
 					<AllImages
@@ -72,6 +81,7 @@ const Test = () => {
 				handleHide={handleHide}
 				setShowModal={setShowModal}
 			/>
+
 		</Container>
 	);
 };
