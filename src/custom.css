@@ -1,0 +1,24 @@
+
+
+  @media screen and (min-width: 415px){
+    .site-container {
+      flex-direction: row;
+    }
+  }
+
+  .red-square {
+    background-color: #FF4136;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

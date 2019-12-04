@@ -1,0 +1,2 @@
+[1203/020715.920:ERROR:process_info.cc(359)] UncheckedAllocate
+[1203/020715.921:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\User\AppData\Local\Google\Chrome\User Data\Crashpad\reports\4cdcc420-877f-4df1-98a2-38dfc8f70563.dmp: The process cannot access the file because it is being used by another process. (0x20)
