@@ -49,3 +49,6 @@ Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
 
     $ npm start
 
+You can now view react-app in the browser.
+
+    localhost:3000/
