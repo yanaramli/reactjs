@@ -6,7 +6,7 @@
 
 
 ## Requirements
-For development, you will only need Node.js installed on your environement. And please use the appropriate Editorconfig plugin for your Editor (not mandatory).
+For development, you will need Node.js and [GIT](http://git-scm.com/downloads) installed on your environement. And please use the appropriate Editorconfig plugin for your Editor (not mandatory).
 
 ### Node
 
@@ -33,25 +33,16 @@ If everything when fine, you should run
 
     brew install node
 
-#### Node installation on Linux
-
-    sudo apt-get install python-software-properties
-    sudo add-apt-repository ppa:chris-lea/node.js
-    sudo apt-get update
-    sudo apt-get install nodejs
-
 #### Node installation on Windows
 
 Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it.
 
 ---
 
 ## Install
 
     $ git clone https://github.com/yanaramli/reactjs.git
-    $ cd react
-    $ cd photoalbum
+    $ cd reactjs
     $ npm install
 
 ## Start & watch
